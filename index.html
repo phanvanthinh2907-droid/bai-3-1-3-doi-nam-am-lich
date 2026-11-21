@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Đổi năm dương lịch sang năm âm lịch</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Đổi năm dương lịch sang năm âm lịch</h1>
+    <p class="cong-thuc">Năm âm lịch = Can + Chi</p>
+
+    <div class="form">
+      <input type="number" id="nam_duong_lich" placeholder="Nhập năm dương lịch">
+      <button onclick="doiNam()">Đổi năm</button>
+    </div>
+
+    <div id="ket_qua" class="result"></div>
+
+    <h3>Bảng tra cứu Can theo năm</h3>
+    <table>
+      <tr>
+        <th>Năm % 10</th>
+        <td>0</td>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+        <td>7</td>
+        <td>8</td>
+        <td>9</td>
+      </tr>
+      <tr>
+        <th>Can</th>
+        <td id="can0">Canh</td>
+        <td id="can1">Tân</td>
+        <td id="can2">Nhâm</td>
+        <td id="can3">Quý</td>
+        <td id="can4">Giáp</td>
+        <td id="can5">Ất</td>
+        <td id="can6">Bính</td>
+        <td id="can7">Đinh</td>
+        <td id="can8">Mậu</td>
+        <td id="can9">Kỷ</td>
+      </tr>
+    </table>
+
+    <h3>Bảng tra cứu Chi theo năm</h3>
+    <table>
+      <tr>
+        <th>Năm % 12</th>
+        <td>0</td>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+        <td>7</td>
+        <td>8</td>
+        <td>9</td>
+        <td>10</td>
+        <td>11</td>
+      </tr>
+      <tr>
+        <th>Chi</th>
+        <td id="chi0">Thân</td>
+        <td id="chi1">Dậu</td>
+        <td id="chi2">Tuất</td>
+        <td id="chi3">Hợi</td>
+        <td id="chi4">Tý</td>
+        <td id="chi5">Sửu</td>
+        <td id="chi6">Dần</td>
+        <td id="chi7">Mẹo</td>
+        <td id="chi8">Thìn</td>
+        <td id="chi9">Tỵ</td>
+        <td id="chi10">Ngọ</td>
+        <td id="chi11">Mùi</td>
+      </tr>
+    </table>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>
